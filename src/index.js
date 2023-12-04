@@ -35,12 +35,9 @@ Menu.setApplicationMenu(mainMenu)
 
 //Menu
 const menu = [
-  {label:'File',
-  submenu:[
-    {label:'Quit',
-  click:()=>app.quit(),
-accelerator:'CmdOrCtrl+W'}
-  ]}
+  { 
+    role: 'fileMenu' 
+  }
 ]
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
